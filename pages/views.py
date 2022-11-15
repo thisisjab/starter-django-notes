@@ -7,3 +7,7 @@ def home_page_view(request):
 
 class HomePageView(TemplateView):
     template_name = "index.html"
+
+
+class AboutPageView(TemplateView):
+    template_name = "about.html"
