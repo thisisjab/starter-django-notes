@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Welcome to posts section.</h1>
+<hr>
+<ul>
+    {% for post in post_list %}
+    <li>{{ post.text }}</li>
+    {% endfor %}
+</ul>
+{% endblock content %}
