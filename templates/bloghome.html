@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Blog</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block content %}
 <h1 style="color: blue">Welcome to my blog!</h1>
 <p>Read. Enjoy. Share.</p>
 <hr>
@@ -13,6 +8,4 @@
     <li><a href="#">{{ post.title }}</a></li>
     {% endfor %}
 </uL>
-
-</body>
-</html>
+{% endblock content %}

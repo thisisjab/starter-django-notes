@@ -1,14 +1,19 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400"
+    rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
 </head>
 <body>
 <header>
     <ul>
         <li><a href="{% url 'home' %}">Home Page</a></li>
         <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'bloghome' %}">blog</a></li>
     </ul>
 </header>
 <body>
