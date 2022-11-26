@@ -2,6 +2,7 @@
 {% block content %}
 <h1 style="color: blue">Welcome to my blog!</h1>
 <p>Read. Enjoy. Share.</p>
+<p>You want to contribute? You can also <a style="color: blue; background: cyan; font-style: italic;" href="{% url 'blog_new_post' %}">add a new post</a>!</p>
 <hr>
 <uL>
     {% for post in post_list %}
