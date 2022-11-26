@@ -6,4 +6,5 @@
     <hr>
     <p>{{ post.body }}</p>
 </div>
+<a style="color: blue; background: cyan; font-style: italic;" href="{% url 'blog_post_edit' post.pk%}">Edit this post</a>
 {% endblock content %}
