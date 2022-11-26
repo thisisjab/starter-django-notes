@@ -7,4 +7,5 @@
     <p>{{ post.body }}</p>
 </div>
 <a style="color: blue; background: cyan; font-style: italic;" href="{% url 'blog_post_edit' post.pk%}">Edit this post</a>
+<a style="color: red; background: yellow; font-style: italic;" href="{% url 'blog_post_delete' post.pk%}">Delete this post</a>
 {% endblock content %}
