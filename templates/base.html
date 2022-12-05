@@ -17,6 +17,13 @@
         <li><a href="{% url 'about' %}">About</a></li>
         <li><a href="{% url 'bloghome' %}">blog</a></li>
     </ul>
+    <hr>
+    {% if user.is_authenticated %}
+    <p>Hi {{ user.username }}!</p>
+    {% else %}
+    <p>You are not logged in.</p>
+    <a href="{% url 'login' %}">Log In</a>
+    {% endif %}
 </header>
 <body>
 {% block content %}
